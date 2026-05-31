@@ -50,7 +50,7 @@ export default function Footer() {
             href="https://github.com/vaghmarelazy"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-text-muted hover:text-text-primary transition-colors duration-200 p-1 hover:scale-105 transition-transform"
+            className="text-text-muted hover:text-text-primary transition-colors duration-200 p-1 hover:scale-105 "
             aria-label="GitHub"
           >
             <Image
