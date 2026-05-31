@@ -72,7 +72,7 @@ const projects = [
       "Engineered automated rent collection reminders and payment status dashboard, giving landlords real-time visibility into overdue and upcoming payments.",
       "Implemented tenant onboarding flow with room assignment, rent amount configuration, and payment history reducing landlord setup time to under 5 minutes per property."
     ],
-    image: "/projects/RentFlow.png",
+    image: "/projects/Rentflow.png",
     techStack: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Tailwind CSS", "shadcn/ui", "REST APIs", "Vercel"],
     liveLink: "https://rent-flow-black.vercel.app/",
     github: "",
