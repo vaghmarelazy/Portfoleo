@@ -7,7 +7,7 @@ export default function Footer() {
   const [relativeTime, setRelativeTime] = useState('')
 
   useEffect(() => {
-    const targetDate = new Date('2026-05-31T14:00:00Z')
+    const targetDate = new Date('2026-05-31T14:00:00')
     
     const getRelativeTimeString = (date) => {
       const timeMs = date.getTime()
@@ -24,12 +24,16 @@ export default function Footer() {
       try {
         const rtf = new Intl.RelativeTimeFormat('en', { numeric: 'auto' })
         return rtf.format(value, units[unitIndex])
-      } catch (e) {
+      } catch {
         return 'recently'
       }
     }
     
-    setRelativeTime(getRelativeTimeString(targetDate))
+    const timeString = getRelativeTimeString(targetDate)
+    const handle = requestAnimationFrame(() => {
+      setRelativeTime(timeString)
+    })
+    return () => cancelAnimationFrame(handle)
   }, [])
 
   return (
