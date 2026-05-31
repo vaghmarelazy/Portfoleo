@@ -173,7 +173,7 @@ function FeaturedProject({ project }) {
                     <span>{highlight}</span>
                   </li>
                 ))}
-              </ul> 
+              </ul>
             )}
           </div>
 
